@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,700;1,900&display=swap');
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logonomeloja{
+    border: none;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 350px;
+    height: 60px;
+    left: 0;
+    display: flex;
+    left: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-loja{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin: 10px;
+    transition: all .5s ease;
+}
+.logo-loja:hover{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.nome-loja{ /* Nome da loja do header*/
+    left:70px;
+    padding: 20px;
+    position: absolute;
+    color: #f5f5f5;
+    transition: all .5s ease;
+}
+.nome-loja:hover{
+    color: black;
+}
+
+.lista-cabeca { /* UL lista */
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.cabeca { /* Navbar header*/
+    background: #a38408;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+li { /*Estilização dos pontos da lista*/
+    list-style-type: none;
+    justify-content: space-around;
+}
+li a{
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: all 0.4s ease;
+}
+li a:hover { /*Estilização dos pontos da lista depois*/
+    color: #010300;
+    text-decoration: underline;
+    font-size: 25px;
+    text-shadow: 0px 0px 20px black;
+}
+
+.profileButton{ /*Botão de perfil*/
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.img_profile{
+    width: 30px;
+    height: 30px;
+    right: 6px;
+    bottom: 1px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.profileButton:hover .img_profile:hover{ 
+    background-color: rgba(187, 222, 198, 0.5);
+    border-radius: 50%;
+    border: 1px solid #bbdec6;
+    width: 40px;
+    height: 40px;
+    bottom: 6px;
+    right: 12px;
+}
+
+.img_inicial{
+    width: 98%;
+    margin: 1%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+.img_inicial:hover{
+    width: 100%;
+    margin: 0;
+    filter: brightness(50%);
+    border-radius: 10px;
+}
+
+.mostrar{
+    display: none;
+    position: absolute;
+    font: bold 70px 'Poppins';
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    top: 30%;
+    right: 40%;
+    margin: 0;
+    padding: 0;
+    color: #ffd710;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+.slider:hover{
+    scale: 120%;
+}
+
+.fundopreto-slider{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #ffd710;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+.popup-wrapper{
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup{  /* Popup click perfil*/
+    width: 130px;
+    background: white;
+    border: 2px solid #bbdec6;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: white;
+    margin-left: 90%;
+    margin-top: 60px;
+    transition: .5s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnSettings{ /*Botões dentro da popup*/
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    text-align: start;
+    color: #010300;
+    height: 30px;
+    width: 130px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 15px;
+    padding: 5px;
+    transition: all 0.2s ease;
+}
+
+.closeProfilePopup{ /*Botões dentro da popup*/
+    background: transparent;
+    border: none;
+    text-align: start;
+    color: #010300;
+    transition: all 0.2s ease;
+}
+.btnSettings:hover{ /*depois que aparece a popup*/
+    background: rgb(25, 25, 25);
+    color: white;
+    width: 130px;
+}
+
+.selects{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background: #a38408;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.select{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    color: #bbdec6;
+    font: 20px 'Poppins';
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectbutton{
+    width: 150px;
+    height: 45px; 
+    border: 2px solid #bbdec6;
+    background: #f5f5f5;
+    color: #473100;
+    font: 20px 'Poppins';
+    margin: 20px auto;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.selectbutton:hover{
+    width: 300px;
+    height: 90px; 
+    border: 2px solid #f5f5f5;
+    background: #473100;
+    color: #bbdec6;
+    font: 40px 'Poppins';
+    margin: 20px auto;
+    border-radius: 50px;
+    cursor: pointer;
+    text-shadow: 0px 0px 12px #ffd710;
+}
+
+.tipo-busca-principal{
+    color: #f5f5f5;
+}
+
+.select p{
+    margin: 20px;
+    left: 20px;
+    position: relative;
+    text-align: start;
+    align-items: start;
+    justify-content: start;
+}
+
+.caixaselect{
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    transition: all .2s ease;
+    font: 20px 'Poppins';
+    color: #d1ae0c;
+    width: 270px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(Imagens/Icons/list-nested.svg) no-repeat 95.5% 50% #FFF;
+    margin-right: 40px;
+}
+
+footer{
+    display: flex;
+    background: #a38408;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.footer-div{ 
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 274.5px;
+    padding: 10px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+}
+
+.car {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.car img {
+    display: flex;
+    width: 100%;
+    max-height: 100%px;
+}
+
+#carCatalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.add-button{
+    background-color: #ffd710;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 95%;
+}
+.add-button:hover{
+    box-shadow: 0px 0px 10px gold;
+    background-color: #a38408;
+}
+
+#carForm{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.div-carData{
+    position: relative;
+    margin: 20px 0;
+}
+
+.div-carData label{
+    position: absolute;
+    bottom: 5px;
+    cursor: text;
+    transition: 0.5s ease;
+    font: 15px Poppins;
+    left: 0;    
+}
+
+.input-carData{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    transition: 0.5s ease;
+}
+
+.input-carData:focus,
+.input-carData:valid{
+    border-bottom: 2px solid #a38408;
+}
+
+.input-carData:focus ~ label,
+.input-carData:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 10px;
+    color: #755b04;
+}
+
+.adicionarCarro-button{
+    border-radius: 25px;
+    font: 17px Poppins;
+    box-shadow: 0px 0px 0px black;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 40px;
+    transition: all 0.5s ease;
+}
+.adicionarCarro-button:hover{
+    border: 3px black;
+    border-radius: 25px;
+    font: 17px Poppins;
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

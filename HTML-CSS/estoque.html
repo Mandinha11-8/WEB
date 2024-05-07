@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="stylePrincip.css">
+</head>
+<body>
+    <header>
+        <nav class="cabeca"> 
+            <a href="index.html" class="logonomeloja">
+                <img src="Imagens/Logo.png" class="logo-loja" alt="">
+                <h2 class="nome-loja" style="padding: 7px; margin: 0;">GSP Automóveis</h2>
+            </a>
+            <ul class="lista-cabeca">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="estoque.html" style="color: black;">Estoque</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button type="submit" class="profileButton"><img src="Imagens/image_profile.svg" class="img_profile"></button>
+        </nav>
+    </header>
+    <main style="min-height: 341px; align-items: center;">
+        <h1 style="font: 55px Poppins; margin: 20px; display: flex; justify-content: center; font-weight: bold;">Estoque</h1>
+        <button class="add-button">+</button>
+        <form id="carForm">
+            <div class="div-carData">
+                <input class="input-carData" type="text" id="carImage" required>
+                <label for="carImage">URL da Imagem</label>
+            </div>
+            <div class="div-carData">
+                <input class="input-carData" type="text" id="carMake" required>
+                <label for="carMake">Marca</label>
+            </div>
+            <div class="div-carData">
+                <input class="input-carData" type="text" id="carModel" required>
+                <label for="carModel">Modelo</label>
+            </div>
+            <button class="adicionarCarro-button" type="submit">Adicionar Carro</button>
+        </form>
+        <div class="wrapperPopup"> <!-- Popup -->
+            <div class="popup-wrapper">
+                <div class="popup">
+                    <div>
+                        <a href="perfil_usu.html"><button class="btnSettings popup-link">Perfil</button></a>
+                    </div>
+                    <div>
+                        <a href="#"><button class="btnSettings popup-link">Configurações</button></a>
+                    </div>
+                    <div>
+                        <a href="#"><button class="btnSettings popup-link">Ajuda</button></a>
+                    </div>
+                    <div>
+                        <a href="#"><button class="btnSettings popup-link">Sair</button></a>
+                    </div>
+                </div>
+                <div class="fundopreto-popup"></div>
+            </div>
+        </div>
+        
+        <div id="carCatalog"></div>
+    </main>
+    <footer id="rodape">
+        <div class="footer-div">
+            <h1 style="margin: 0px; margin-top: 10px;">Sobre</h1>
+            <div class="parag-footer">
+                <p style="margin: 0px; text-align: justify;">A GSP Automóveis foi desenvolvida penando no bem estar no cliente enquanto navega buscando a melhor opção de carro para adquirir.</p>
+            </div>
+        </div>
+        <div class="footer-div">
+            <h1 style="margin: 0px; margin-top: 10px;">Contato</h1>
+            <div class="parag-footer">
+                <p style="margin: 0px; text-align: justify;">Caso queira entrar em contato com o suporte, envie uma mensagem ou email em qualquer uma das redes sociais listadas ao lado, no campo 'Redes Sociais'</p>
+            </div>
+        </div>
+        <div class="footer-div">
+            <h1 style="margin: 0px; margin-top: 10px;">Informações</h1>
+            <div class="parag-footer">
+                <p style="margin: 0px; text-align: justify;">Loja criada no ano de 2023 por alunos do ensino técnico integrado em informática do IFSC (Instituto Federal de Santa Catarina) como forma de avaliação final do curso (Projeto Integrador).</p>
+            </div>
+        </div>
+        <div class="footer-div">
+            <h1 style="margin: 0px; margin-top: 10px;">Redes Sociais</h1>
+            <div class="social" style="margin: 2px;">
+                <img src="Imagens/icons/instagram.svg" alt="">
+                <a style="text-decoration: none; color: #bbdec6; padding-left: 4px;" href="https://www.instagram.com/gspautomoveis/" target="_blank" rel="external">Instagram</a>
+            </div>
+            <div class="social" style="margin: 2px;">
+                <img src="Imagens/icons/envelope.svg" alt="">
+                <a style="text-decoration: none; color: #bbdec6; padding-left: 4px;" href="mailto:gspautomoveis@gmail.com? subject=subject text" target="_blank" rel="external">Email</a>
+            </div>
+            <div class="social" style="margin: 2px;">
+                <img src="Imagens/Icons/tiktok.svg" style="width: 16px; height: 23px; margin: 0; padding: 0">
+                <a style="text-decoration: none; color: #bbdec6; padding-left: 4px;" href="https://www.tiktok.com/@gspautomoveis" target="_blank" rel="external">Tiktok</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+coresAmarelo{
+    color1: #ffd710 ;
+    color2: #d1ae0c;
+    color3: #a38408;
+    color4: #755b04;
+    color5: #473100;
+}
+
+coresVerde{ 
+    color1: #002e34;
+    color2: #004443;
+    color3: #00755c;
+    color4: #00c16c;
+    color5: #90ff17;
+}
+
+coresPreto{
+    color1: #000000;
+    color2: #232323;
+    color3: #464646;
+    color4: #696969;
+    color5: #8c8c8c;
+}
+
+coresPadrao{
+    color: #f5f5f5;
+}

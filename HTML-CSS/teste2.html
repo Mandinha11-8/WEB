@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Carros</title>
+    <style>
+    .car {
+        width: 350px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        width: 350px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .car img {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    #carCatalog{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        transition: all 0.5s ease;
+    }
+    </style>
+</head>
+<body>
+    <h1>Loja de Carros</h1>
+
+    <form id="carForm">
+      <label for="carImage">URL da Imagem:</label>
+      <input type="text" id="carImage" required />
+      <br />
+      <label for="carMake">Marca:</label>
+      <input type="text" id="carMake" required />
+      <br />
+      <label for="carModel">Modelo:</label>
+      <input type="text" id="carModel" required />
+      <br />
+      <button type="submit">Adicionar Carro</button>
+    </form>
+
+    <div id="carCatalog"></div>
+
+    <script>
+      // Função para adicionar um carro ao catálogo
+      function adicionarCarro(event) {
+        event.preventDefault();
+
+        // Obter os valores dos campos do formulário
+        const carImage = document.getElementById("carImage").value;
+        const carMake = document.getElementById("carMake").value;
+        const carModel = document.getElementById("carModel").value;
+
+        // Criar a div do carro
+        const carDiv = document.createElement("div");
+        carDiv.classList.add("car");
+
+        // Criar a imagem do carro
+        const carImg = document.createElement("img");
+        carImg.src = carImage;
+        carDiv.appendChild(carImg);
+
+        // Criar os dados do carro
+        const carData = document.createElement("p");
+        carData.innerText = carMake + " " + carModel;
+        carDiv.appendChild(carData);
+
+        // Adicionar a div do carro ao catálogo
+        const carCatalog = document.getElementById("carCatalog");
+        carCatalog.appendChild(carDiv);
+
+        // Limpar os campos do formulário
+        document.getElementById("carImage").value = "";
+        document.getElementById("carMake").value = "";
+        document.getElementById("carModel").value = "";
+      }
+
+      // Adicionar um listener para o evento de submit do formulário
+      const carForm = document.getElementById("carForm");
+      carForm.addEventListener("submit", adicionarCarro);
+    </script>
+  </body>
+</html>

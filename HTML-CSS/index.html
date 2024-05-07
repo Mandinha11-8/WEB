@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePrincip.css">
+    <title>Principal</title>
+    <link rel="logo" href="Imagens/Icons/Logo.ico">
+</head>
+<body>
+    <header>
+        <nav class="cabeca"> 
+            <a href="index.html" class="logonomeloja">
+                <img src="Imagens/Logo.png" class="logo-loja" alt="">
+                <h2 class="nome-loja" style="padding: 7px; margin: 0;">GSP Automóveis</h2>
+            </a>
+            <ul class="lista-cabeca">
+                <li><a href="index.html" style="color: black;">Início</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button type="submit" class="profileButton"><img src="Imagens/image_profile.svg" class="img_profile"></button>
+        </nav>
+    </header>
+    <!--<img src="Imagens/imgtelainicial.jpg" style="display: flex; width: 100; object-fit: cover; width: 100%; height: 91vh;" alt="">-->
+    <main style="background: rgb(255, 255, 255);">
+        <div>
+            <a href="estoque.html">
+                <img src="Imagens/carroTelaInicial.jpg" alt="" class="img_inicial">
+                <div class="mostrar">Estoque</div>
+            </a>
+        </div>
+        <div class="fundopreto-slider"></div>
+        <div class="slider"> <!-- Slider / Carrossel -->
+            <div class="slides">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--Fim Radio Buttons-->
+
+                <!--Slide images-->
+                <div class="slide first">
+                    <img src="Imagens/Carros Carrossel/carro1.jpg" alt="imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="Imagens/Carros Carrossel/carro2.jpg" alt="imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="Imagens/Carros Carrossel/carro3.jpg" alt="imagem 3">
+                </div>
+                <div class="slide">
+                    <img src="Imagens/Carros Carrossel/carro4.png" alt="imagem 4">
+                </div>
+                <!--Fim Slide images-->
+
+                <!--Navigation alto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+        <div class="wrapperPopup"> <!-- Popup -->
+            <div class="popup-wrapper">
+                <div class="popup">
+                    <div>
+                        <a href="perfil_usu.html"><button class="btnSettings popup-link">Perfil</button></a>
+                    </div>
+                    <div>
+                        <a href="#"><button class="btnSettings popup-link">Configurações</button></a>
+                    </div>
+                    <div>
+                        <a href="#"><button class="btnSettings popup-link">Ajuda</button></a>
+                    </div>
+                    <div>
+                        <a href="#"><button class="btnSettings popup-link">Sair</button></a>
+                    </div>
+                </div>
+                <div class="fundopreto-popup"></div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <div style="display: flex; justify-content: center;">
+                <div class="selects" style="margin: 20px; text-align: justify; border-radius: 100px;">
+                    <h1 style="margin: 10px auto; font-family: 'Poppins',sans-serif; color: #f7f8fc; text-decoration: underline;">Busca filtrada</h1>
+                    <div class="select">
+                        <p class="tipo-busca-principal">Marca</p>
+                        <select form="myGeeks" class="caixaselect" autofocus>
+                            <option value="">Sem preferência</option>
+                            <option value="VolksWagen">VolksWagen</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Nissan">Nissan</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <p class="tipo-busca-principal">Modelo</p>
+                        <select form="myGeeks" class="caixaselect" autofocus>
+                            <option value="">Sem preferência</option>
+                            <option value="mod1">Modelo1</option>
+                            <option value="mod2">Modelo2</option>
+                            <option value="mod3">Modelo3</option>
+                            <option value="mod4">Modelo4</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <p class="tipo-busca-principal">Ano</p>
+                        <select form="myGeeks" class="caixaselect" autofocus>
+                            <option value="">Sem preferência</option>
+                            <option value="2000">Ano 2000</option>
+                            <option value="2001">Ano 2001</option>
+                            <option value="2002">Ano 2002</option>
+                            <option value="2003">Ano 2003</option>
+                            <option value="2004">Ano 2004</option>
+                            <option value="2005">Ano 2005</option>
+                            <option value="2006">Ano 2006</option>
+                            <option value="2007">Ano 2007</option>
+                            <option value="2008">Ano 2008</option>
+                            <option value="2009">Ano 2009</option>
+                            <option value="2010">Ano 2010</option>
+                        </select>
+                    </div>
+                    <button class="selectbutton">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="rodape">
+        <div class="footer-div">
+            <h1 style="margin: 0px; margin-top: 10px;">Sobre</h1>
+            <div class="parag-footer">
+                <p style="margin: 0px; text-align: justify;">A GSP Automóveis foi desenvolvida penando no bem estar no cliente enquanto navega buscando a melhor opção de carro para adquirir.</p>
+            </div>
+        </div>
+        <div class="footer-div">
+            <h1 style="margin: 0px; margin-top: 10px;">Contato</h1>
+            <div class="parag-footer">
+                <p style="margin: 0px; text-align: justify;">Caso queira entrar em contato com o suporte, envie uma mensagem ou email em qualquer uma das redes sociais listadas ao lado, no campo 'Redes Sociais'</p>
+            </div>
+        </div>
+        <div class="footer-div">
+            <h1 style="margin: 0px; margin-top: 10px;">Informações</h1>
+            <div class="parag-footer">
+                <p style="margin: 0px; text-align: justify;">Loja criada no ano de 2023 por alunos do ensino técnico integrado em informática do IFSC (Instituto Federal de Santa Catarina) como forma de avaliação final do curso (Projeto Integrador).</p>
+            </div>
+        </div>
+        <div class="footer-div">
+            <h1 style="margin: 0px; margin-top: 10px;">Redes Sociais</h1>
+            <div class="social" style="margin: 2px;">
+                <img src="Imagens/icons/instagram.svg" alt="">
+                <a style="text-decoration: none; color: #bbdec6; padding-left: 4px;" href="https://www.instagram.com/gspautomoveis/" target="_blank" rel="external">Instagram</a>
+            </div>
+            <div class="social" style="margin: 2px;">
+                <img src="Imagens/icons/envelope.svg" alt="">
+                <a style="text-decoration: none; color: #bbdec6; padding-left: 4px;" href="mailto:gspautomoveis@gmail.com? subject=subject text" target="_blank" rel="external">Email</a>
+            </div>
+            <div class="social" style="margin: 2px;">
+                <img src="Imagens/Icons/tiktok.svg" style="width: 16px; height: 23px; margin: 0; padding: 0">
+                <a style="text-decoration: none; color: #bbdec6; padding-left: 4px;" href="https://www.tiktok.com/@gspautomoveis" target="_blank" rel="external">Tiktok</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scriptInicial.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

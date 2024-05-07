@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .label-carData {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+
+    .input-carData {
+      margin-left: 5px;
+    }
+
+    button {
+      width: 250px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <form id="carForm">
+    <div class="form-group">
+      <div class="label-carData">
+        <label for="carImage">URL da Imagem:</label>
+      </div>
+      <input class="input-carData" type="text" id="carImage" required>
+    </div>
+    <div class="form-group">
+      <div class="label-carData">
+        <label for="carMake">Marca:</label>
+      </div>
+      <input class="input-carData" type="text" id="carMake" required>
+    </div>
+    <div class="form-group">
+      <div class="label-carData">
+        <label for="carModel">Modelo:</label>
+      </div>
+      <input class="input-carData" type="text" id="carModel" required>
+    </div>
+    <button type="submit">Adicionar Carro</button>
+  </form>
+</body>
+</html>
